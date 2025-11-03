@@ -18,9 +18,56 @@ This project is intended for learning and lab use only.
 - Root/admin privileges to capture packets on most platforms
 
 ## Quick start (local, terminal)
-```bash
+
 # install dependencies
 pip install -r requirements.txt
 
 # run on default interface, capture 10 packets and write to file
 sudo python3 packet_sniffer.py -p tcp --count 10 --pcap sample.pcap
+
+## Usage
+python3 packet_sniffer.py --interface eth0 --protocol tcp --count 0 --timeout 60 --pcap out.pcap
+
+
+## Key options:
+
+-i, --interface interface name
+
+-p, --protocol tcp|udp|ip|all
+
+--count stop after N packets
+
+--timeout stop after T seconds
+
+--pcap write captured packets to file
+
+-v verbose logging
+
+## Contributing
+
+Contributions are welcome. Suggested first PRs:
+
+Add more unit tests
+
+Add PCAP replay capability
+
+Add Windows support notes
+
+Please read CONTRIBUTING.md before submitting PRs.
+
+## `CONTRIBUTING.md`
+
+# Contributing
+
+Welcome. Keep changes focused and small. Branch name format: `feat/<short-desc>` or `fix/<short-desc>`.
+
+- Create a branch from `main`
+- Make your changes
+- Add tests where possible
+- Open a Pull Request describing the change and how to test it
+
+We run tests via GitHub Actions. Thank you for contributing.
+
+## License
+
+MIT
