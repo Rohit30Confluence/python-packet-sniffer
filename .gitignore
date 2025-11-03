@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+.envrc
+.idea/
+.vscode/
+*.swp
+*.swo
+*.log
+
+# pcap output
+*.pcap
