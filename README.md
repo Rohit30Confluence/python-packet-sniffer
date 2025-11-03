@@ -1,5 +1,8 @@
 # Python Packet Sniffer
 
+[![CI](https://github.com/Rohit30Confluence/python-packet-sniffer/actions/workflows/ci.yaml/badge.svg)](https://github.com/Rohit30Confluence/python-packet-sniffer/actions)
+
+
 A minimal educational packet sniffer written in Python using Scapy.  
 This project is intended for learning and lab use only.
 
